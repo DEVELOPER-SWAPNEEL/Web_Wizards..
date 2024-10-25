@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TABLES</title>
+</head>
+<body>
+    <!-- there are some importanat tags avliable those are:
+    1. table tag
+    2. thead (signify the head of a table) -----0>>> th tag is used for it
+    3. tbody (signify the body of a tag) ------0>>> tb is used for it
+    4. tfoot (signify the summrization of the table) ----------0> tf is used for it.
+
+    and some sub tags that are 
+    tr is for row table
+    td is for table data -->
+
+    <table border="1">
+        <thead>
+            <th>SERIEL NO.</th>
+            <th>NAME</th>
+            <th>ROLL NUMBER</th>
+            <th>GENDER</th>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>swapneel</td>
+            <td>2328053</td>
+            <td>Malee</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>priyansi</td>
+            <td>143</td>
+            <td>Fe</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>sneha</td>
+            <td>23222</td>
+            <td>fe</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>rounak</td>
+            <td>1234</td>
+            <td>Malee</td>
+        </tr>
+    </tbody>
+    </table>
+
+    <!-- now if in the same table you are facing that some data are missing and you need to fill the data accordingly so to make so:
+    we use rowspan and colspan in the table data it self in the td tag: -->
+    <table border="1">
+        <thead>
+            <th>SERIEL NO.</th>
+            <th>NAME</th>
+            <th>ROLL NUMBER</th>
+            <th>GENDER</th>
+        </thead>
+
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td rowspan="2">swapneel</td>
+            <td colspan="">2328053</td>
+            <td rowspan="4">Malee</td>
+        </tr>
+        <tr>
+            <td>2</td>
+        
+            <td>143</td>
+        
+        </tr>
+        <tr>
+            <td colspan="2">3</td>
+            
+            <td>23222</td>
+        
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>rounak</td>
+            <td>1234</td>
+        
+        </tr>
+    </tbody>
+    </table>
+    <!-- <table border="12">
+        <tr>
+            <td>student NAME</td>
+            <td>student roll numquam</td>
+            <td>subject</td>
+            <td>marks</td>
+        </tr>
+        <tr>
+            <td>neha</td>
+            <td>232</td>
+            <td>maths</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>niku</td>
+            <td>123</td>
+            <td>geology</td>
+            <td>1000</td>
+        </tr>
+        <tr>
+            <td>heha</td>
+            <td>9191</td>
+            <td>ohysics</td>
+            <td>99</td>
+        </tr>
+    </table> -->
+
+    <table border="1">
+        <thead>
+            <th>column 1 </th>
+            <th>column 2</th>
+            <th>column 3</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td rowspan="2">Row 1 Cell 1</td>
+                <td>ROW 1 cell 2</td>
+                <td>row 1 cell 3</td>
+            </tr>
+            <tr>
+                
+                <td>row 2 cell 2</td>
+                <td>row 2 cell 3</td>
+            </tr>
+            <tr>
+                <td colspan="3">ROW 3 cell 1</td>
+
+            </tr>
+        </tbody>
+    </table>
+    
+</body>
+</html>
